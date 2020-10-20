@@ -1,0 +1,21 @@
+import os 
+from flask import Flask, jsonify, request
+from math import sqrt
+
+app = Flask(__NAME__)
+
+@app.route('/')
+def nao_entre_em_panico():
+    proximo = 1 
+    anterior = 0
+    limite = 50
+    found = 0 
+    resposta = "0,"
+    while (found < limite):
+        tmp = proximo
+        proximo = proximo + anterior =
+        anterior = tmp
+        found=found+1
+        resposta+= str(proximo) + ","
+
+    return resposta 
